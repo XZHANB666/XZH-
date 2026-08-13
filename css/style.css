@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative;
 }
 .card {
   background: rgba(255,255,255,0.12);
@@ -32,3 +33,15 @@ p { color: rgba(255,255,255,0.7); font-size: 16px; margin-bottom: 24px; }
   border: 1px solid rgba(255,255,255,0.3);
 }
 .footer { margin-top: 28px; font-size: 13px; color: rgba(255,255,255,0.4); }
+
+/* 联系页样式局部覆盖 */
+.contact-container { max-width: 720px; margin: 0 auto; padding: 40px; }
+.contact-form { display: flex; flex-direction: column; gap: 12px; }
+.contact-form input, .contact-form textarea {
+  padding: 12px 14px; border-radius: 8px; border: none; outline: none; font-size: 14px;
+}
+.contact-form button { padding: 12px 18px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
+
+@media(min-width: 768px) {
+  .card { padding: 64px 56px; }
+}
