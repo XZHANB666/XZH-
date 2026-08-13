@@ -5,21 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>我的网站</title>
   <meta name="description" content="个人网站 - 展示作品与联系我。">
-  <meta property="og:title" content="我的网站" />
-  <meta property="og:description" content="个人网站 - 展示作品与联系我。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://XZHANB666.github.io/XZH-/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header style="position: absolute; top: 18px; left: 18px;">
-    <nav>
-      <a href="/" style="color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600;">首页</a>
-      <span style="margin: 0 8px; color: rgba(255,255,255,0.4);">•</span>
-      <a href="contact.html" style="color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600;">联系</a>
-    </nav>
-  </header>
+  <div id="site-header"></div>
 
   <main>
     <div class="card">
@@ -27,10 +17,11 @@
       <h1>我的网站上线了！</h1>
       <p>用手机GitHub部署，永久在线</p>
       <a href="contact.html" class="btn">开始探索</a>
-      <div class="footer">© 2026 · 我的个人网站</div>
+      <div id="site-footer-placeholder"></div>
     </div>
   </main>
 
+  <script src="js/components.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

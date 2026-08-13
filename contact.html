@@ -8,13 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="site-header"></div>
+
   <main class="contact-container">
     <h1 style="color:#fff; margin-bottom:12px;">联系我</h1>
     <p style="color:rgba(255,255,255,0.75); margin-bottom:18px;">填写下面的表单，发送消息给我（示例使用 Formspree；请替换为你的 action URL）。</p>
-
-    <!-- 表单示例：使用 Formspree（替换 YOUR_FORMSPREE_ID）或改为你自己的后端地址 -->
-    <!-- 1) 在 Formspree.io 注册并创建表单，获取 action URL，例如 https://formspree.io/f/xxxxxxxx -->
-    <!-- 2) 将 form 的 action 替换为上面的 URL，表单就能把邮件发送到你的邮箱 -->
 
     <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
       <input type="text" name="name" placeholder="你的名字" required />
@@ -27,5 +25,10 @@
 
     <p style="color:rgba(255,255,255,0.4); margin-top:30px;">返回 <a href="/" style="color:#fff;">首页</a></p>
   </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
